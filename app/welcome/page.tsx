@@ -6,7 +6,8 @@ import Link from 'next/link'
 import mobileLogo from '@/public/mystoryIcon.svg'
 
 
-// root marketing page, unprotected
+// root marketing page
+
 const Page = () => {
     return (
         <div className="flex flex-col-reverse sm:flex-row h-screen">
