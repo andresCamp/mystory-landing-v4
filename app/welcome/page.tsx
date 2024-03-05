@@ -10,7 +10,7 @@ import mobileLogo from '@/public/mystoryIcon.svg'
 
 const Page = () => {
     return (
-        <div className="flex flex-col-reverse sm:flex-row max-h-screen overflow-hidden">
+        <div className="flex flex-col-reverse sm:flex-row h-screen overflow-hidden">
             
             {/* Text Section */}
             <div className=" flex flex-1 flex-col items-center sm:items-start justify-center bg-secondary p-8 h-2/3 sm:h-auto sm:w-1/2">
@@ -26,7 +26,7 @@ const Page = () => {
                 {/* /Logo */}
 
                 {/* Title & Subtitle */}
-                <div className="w-full h-full max-w-md mx-auto sm:gap-10 gap-2 sm:pt-0 text-left flex flex-col sm:justify-center items-center sm:items-start">
+                <div className="w-full h-full max-w-md mx-auto sm:gap-10 gap-3 sm:pt-0 text-left flex flex-col sm:justify-center items-center sm:items-start">
                     <div className="text-gray-800 w-full">
                         <h2 className="font-bold text-5xl sm:text-6xl lg:text-7xl mb-4 leading-tight">
                             <span>My Legacy</span><br/>
