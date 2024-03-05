@@ -13,7 +13,7 @@ const Page = () => {
         <div className="flex flex-col-reverse sm:flex-row h-screen">
             
             {/* Text Section */}
-            <div className=" flex flex-1 flex-col items-center sm:items-start justify-center bg-secondary p-8 h-1/2 sm:h-auto sm:w-1/2">
+            <div className=" flex flex-1 flex-col items-center sm:items-start justify-center bg-secondary p-8 h-2/3 sm:h-auto sm:w-1/2">
                 
                 {/* Logo */}
                 <Link href={"/"} className='transition-all duration-500 hover:opacity-70 hidden sm:block'>
@@ -48,7 +48,7 @@ const Page = () => {
 
 
             {/* Image Section */}
-            <div className="flex flex-1 sm:w-1/2">
+            <div className="flex h-1/3 sm:w-1/2">
                 {/* Mobile nav */}
                 <div className='flex justify-between p-3 items-center absolute top-0 z-50 left-0 w-full sm:hidden'>
                     <h2 className='text-2xl w-1/3'>MyStory</h2>
@@ -67,19 +67,25 @@ const Page = () => {
                 </div>
 
                 <div className="w-full h-full relative">
-                    {/* Using Next.js Image component for optimized images */}
-                    <Image
-                        src={img}
-                        style={{objectFit: 'cover', width: '100%', height: '100%'}}
-                        placeholder='blur'
-                        alt="MyStory image holding hands"
-                        />
-                </div>
-                    <Link href="https://app.mystory.bio/sign-in" className='hidden sm:block'>
-                        <button className='bg-white text-black text-xl rounded-3xl px-10 m-10 py-3 absolute right-0 transition-all duration-500 hover:bg-primary-100 hover:scale-105'>
-                            Sign In
-                        </button>
-                    </Link>
+    <div className="md:h-full md:w-full flex items-end"> {/* This ensures the container focuses on the bottom part on mobile */}
+        {/* Using Next.js Image component for optimized images */}
+        <Image
+            src={img}
+            layout="fill"
+            objectFit="cover"
+            objectPosition="bottom" 
+            placeholder="blur"
+            alt="MyStory image holding hands"
+            className="w-full h-full" 
+        />
+    </div>
+</div>
+
+                <Link href="https://app.mystory.bio/sign-in" className='hidden sm:block'>
+                    <button className='bg-white text-black text-xl rounded-3xl px-10 m-10 py-3 absolute right-0 transition-all duration-500 hover:bg-primary-100 hover:scale-105'>
+                        Sign In
+                    </button>
+                </Link>
             </div>
 
         </div>
