@@ -71,7 +71,8 @@ const Page = () => {
                     <Image
                         src={img}
                         style={{objectFit: 'cover', width: '100%', height: '100%'}}
-                        alt="Your Image Description"
+                        placeholder='blur'
+                        alt="MyStory image holding hands"
                         />
                 </div>
                     <Link href="https://app.mystory.bio/sign-in" className='hidden sm:block'>
