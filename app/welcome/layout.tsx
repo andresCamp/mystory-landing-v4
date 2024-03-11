@@ -8,7 +8,7 @@ import "../globals.css";
 
 export const metadata: Metadata = {
   title: 'MyStory - Begin your Journey',
-  description: 'Your Legacy, Their Treasure',
+  description: 'Your Legacy, Your Treasure, MyStory',
 };
 
 export default function RootLayout({
