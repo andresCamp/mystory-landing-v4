@@ -97,7 +97,7 @@ const MissionCard: React.FC<MissionCardProps> = ({title, description, image, del
                     />
             )}
             <MissionCardTitle title={titleParts} delay={delay} />
-            <h3 className='absolute bottom-0 sm:right-0 text-stone-400 m-24 w-2/3 sm:w-auto  text-center sm:m-12 text-lg z-10'>{description}</h3>
+            <h3 className='absolute bottom-0 lg:right-0 text-stone-400 m-24 w-2/3 sm:w-auto  text-center sm:m-3 lg:m-9 text-lg z-10'>{description}</h3>
         </div>
   )
 }
