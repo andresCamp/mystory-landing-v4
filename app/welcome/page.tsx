@@ -4,6 +4,7 @@ import logo from '@/public/MyStoryLogo-HorizontalBlack.svg'
 import Image from 'next/image'
 import Link from 'next/link'
 import mobileLogo from '@/public/mystoryIcon.svg'
+import { outfit } from '@/lib/fonts'
 
 
 // root marketing page
@@ -38,7 +39,7 @@ const Page = () => {
                     <p className="text-xl text-black mb-2">Capture your life story in a video for your loved ones and generations to come.</p>
                     
                     <PrimaryButton url="https://app.mystory.bio/create-account">
-                        <p className='text-2xl'>Start Now</p>
+                        <p className={`${outfit.className} text-2xl tracking-wide`}>Start Now</p>
                     </PrimaryButton>
                 </div>
                 {/* /Title & Subtitle */}

@@ -1,4 +1,4 @@
-import { Caudex, Inter } from 'next/font/google'
+import { Caudex, Inter, Outfit } from 'next/font/google'
 
 
 // default at root layout
@@ -13,5 +13,11 @@ export const caudex = Caudex({
 // add inline className={inter.classname}
 export const inter = Inter({
   subsets: ['latin'],
+  display: 'swap',
+})
+
+export const outfit = Outfit({
+  subsets: ['latin'],
+  weight: ['400'],
   display: 'swap',
 })
