@@ -39,7 +39,7 @@ const Page = () => {
                     <p className="text-xl text-black mb-2">Capture your life story in a video for your loved ones and generations to come.</p>
                     
                     <PrimaryButton url="https://app.mystory.bio/sign-up">
-                        <p className={`${outfit.className} text-2xl tracking-wide`}>Start Now</p>
+                        <p className='text-2xl tracking-wide'>Start Now</p>
                     </PrimaryButton>
                 </div>
                 {/* /Title & Subtitle */}
