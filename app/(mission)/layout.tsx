@@ -7,6 +7,7 @@ import Image from 'next/image'
 // import logo from '@/public/mystorylogotanhand.svg'
 import logo from '@/public/mystoryIcon.svg'
 import arrowIcon from '@/public/Arrow.svg'
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: 'MyStory',
@@ -27,6 +28,7 @@ export default function RootLayout({
             {children}
             {/* <NavTab/> */}
             <JoinBetaCTA/>
+            <Analytics/>
         </body>
       </html>
   )
