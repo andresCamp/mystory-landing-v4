@@ -39,9 +39,9 @@ export default function RootLayout({
 const NavBarMission = () => {
   return (
     // <div className='flex justify-center w-full sm:justify-start fixed top-0 p-2 sm:p-8 z-50 backdrop-blur-sm sm:backdrop-blur-none '>
-    <div className='flex justify-center text-white  gap-16 sm:gap-0 sm:justify-between items-center w-full fixed top-0  pt-8 pb-4 sm:py-8 sm:px-12 z-50 backdrop-blur-sm sm:backdrop-blur-none '>
+    <div className='flex justify-center text-white  gap-16 sm:gap-0 sm:justify-between items-center w-full fixed top-0  pt-8 pb-4 sm:py-8 px-12 z-50 backdrop-blur-sm sm:backdrop-blur-none '>
         
-        <div className='flex w-1/3 flex-row justify-end sm:justify-start items-center text-lg gap-8 '>
+        <div className='flex w-1/3 flex-row justify-start items-center text-lg gap-8 '>
             {/* <Link href={"/"} className=' transition-all duration-500 hover:opacity-70'> */}
                 <h2 className='text-xl'>MyStory</h2>
             {/* </Link> */}
@@ -55,7 +55,7 @@ const NavBarMission = () => {
             />
         {/* </Link> */}
 
-        <div className='flex w-1/3 flex-row justify-start sm:justify-end items-center text-lg gap-8 '>
+        <div className='flex w-1/3 flex-row justify-end items-center text-lg gap-8 '>
             <Link href={"/waitlist"} className=' transition-all duration-500 hover:opacity-70'>
                 <h3 className='text-xl'>Begin</h3>
             </Link>
