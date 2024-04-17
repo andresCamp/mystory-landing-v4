@@ -12,10 +12,10 @@ import WaitlistForm from './WaitlistForm'
 
 const Page = () => {
     return (
-        <div className="flex flex-col-reverse sm:flex-row min-h-screen sm:h-screen overflow-hidden bg-secondary">
+        <div className="flex flex-col-reverse md:flex-row min-h-screen md:h-screen overflow-hidden bg-secondary">
 
             {/* Image Section */}
-            <div className="hidden sm:flex sm:h-full sm:w-1/2 relative">
+            <div className="hidden md:flex md:h-full md:w-1/2 relative">
                 <Image
                     src={img}
                     alt="MyStory image holding hands"
@@ -28,9 +28,9 @@ const Page = () => {
 
 
             {/* Text Section */}
-            <div className="flex flex-1 flex-col items-center sm:items-start justify-center px-3 sm:p-8 h-2/3 sm:h-auto sm:w-1/2">
+            <div className="flex flex-1 flex-col items-center md:items-start justify-center px-3 md:p-8 h-2/3 md:h-auto md:w-1/2">
                 {/* Logo */}
-                <Link href={"/"} className='transition-all duration-500 hover:opacity-70 hidden sm:flex w-full items-start'>
+                <Link href={"/"} className='transition-all duration-500 hover:opacity-70 mt-9 hidden md:flex w-full items-start'>
                     <Image
                         src={logo}
                         alt="logo" 
@@ -38,10 +38,10 @@ const Page = () => {
                     />
                 </Link>
                 {/* Title & Subtitle */}
-                <div className="w-full h-full max-w-md mx-auto sm:gap-10 gap-3 sm:pt-0 text-left flex flex-col sm:justify-center items-center sm:items-start">
-                    <div className="text-gray-800 w-full px-4 py-5 sm:p-6">
+                <div className="w-full h-full max-w-md mx-auto md:gap-10 gap-3 md:pt-0 text-left flex flex-col md:justify-center items-center md:items-start">
+                    <div className="text-gray-800 w-full px-4 py-5 md:p-6">
                         <div className="text-left">
-                            <h2 className="font-bold text-4xl sm:text-4xl lg:text-5xl mb-4 leading-tight">
+                            <h2 className="font-bold text-4xl md:text-4xl lg:text-5xl mb-4 leading-tight">
                                 Join the Waitlist
                             </h2>  
                         </div>
@@ -58,7 +58,7 @@ const Page = () => {
                 </div>
             </div>
 
-            <div className='flex sm:hidden px-3 pt-3'>
+            <div className='flex md:hidden px-3 pt-3'>
                 <Link href={"/"} className='transition-all duration-500 hover:opacity-70 flex w-full items-start'>
                         <Image
                             src={logo}
