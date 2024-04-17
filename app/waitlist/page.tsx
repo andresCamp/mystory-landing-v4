@@ -28,9 +28,9 @@ const Page = () => {
 
 
             {/* Text Section */}
-            <div className="flex flex-1 flex-col items-center md:items-start justify-center px-3 md:p-8 h-2/3 md:h-auto md:w-1/2">
+            <div className="flex flex-1 flex-col items-center md:items-center justify-start px-3 md:p-8 h-2/3 md:h-auto md:w-1/2 overflow-y-auto">
                 {/* Logo */}
-                <Link href={"/"} className='transition-all duration-500 hover:opacity-70 mt-9 hidden md:flex w-full items-start'>
+                <Link href={"/"} className='transition-all duration-500 hover:opacity-70  hidden md:flex w-full items-start'>
                     <Image
                         src={logo}
                         alt="logo" 
@@ -38,8 +38,8 @@ const Page = () => {
                     />
                 </Link>
                 {/* Title & Subtitle */}
-                <div className="w-full h-full max-w-md mx-auto md:gap-10 gap-3 md:pt-0 text-left flex flex-col md:justify-center items-center md:items-start">
-                    <div className="text-gray-800 w-full px-4 py-5 md:p-6">
+                {/* <div className="w-full h-full max-w-md mx-auto md:gap-10 gap-3 md:pt-0 text-left flex flex-col md:justify-center items-center md:items-start"> */}
+                    <div className="text-gray-800 max-w-lg px-4 py-5 md:p-6">
                         <div className="text-left">
                             <h2 className="font-bold text-4xl md:text-4xl lg:text-5xl mb-4 leading-tight">
                                 Join the Waitlist
@@ -55,7 +55,7 @@ const Page = () => {
                             </p>
                         </div>
                     </div>
-                </div>
+                {/* </div> */}
             </div>
 
             <div className='flex md:hidden px-3 pt-3'>
