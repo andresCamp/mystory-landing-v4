@@ -12,23 +12,25 @@ import WaitlistForm from './WaitlistForm'
 
 const Page = () => {
     return (
-        <div className="flex flex-col-reverse sm:flex-row h-screen overflow-hidden">
+        <div className="flex flex-col-reverse sm:flex-row min-h-screen sm:h-screen overflow-hidden bg-secondary">
 
             {/* Image Section */}
             <div className="hidden sm:flex sm:h-full sm:w-1/2 relative">
-    <Image
-        src={img}
-        alt="MyStory image holding hands"
-        layout="fill"  // Ensures the image covers the available space
-        objectFit="cover"  // Adjust the fit of the image within the container
-    />
-</div>
+                <Image
+                    src={img}
+                    alt="MyStory image holding hands"
+                    fill  // Ensures the image covers the available space
+                    style={{
+                        objectFit: 'cover',
+                      }}
+                />
+            </div>
 
 
             {/* Text Section */}
-            <div className="flex flex-1 flex-col items-center sm:items-start justify-center bg-secondary p-8 h-2/3 sm:h-auto sm:w-1/2">
+            <div className="flex flex-1 flex-col items-center sm:items-start justify-center px-3 sm:p-8 h-2/3 sm:h-auto sm:w-1/2">
                 {/* Logo */}
-                <Link href={"/"} className='transition-all duration-500 hover:opacity-70 hidden sm:block'>
+                <Link href={"/"} className='transition-all duration-500 hover:opacity-70 hidden sm:flex w-full items-start'>
                     <Image
                         src={logo}
                         alt="logo" 
@@ -54,6 +56,16 @@ const Page = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div className='flex sm:hidden px-3 pt-3'>
+                <Link href={"/"} className='transition-all duration-500 hover:opacity-70 flex w-full items-start'>
+                        <Image
+                            src={logo}
+                            alt="logo" 
+                            height={55}
+                        />
+                </Link>
             </div>
 
         </div>

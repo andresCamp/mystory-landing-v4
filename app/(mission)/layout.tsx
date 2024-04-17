@@ -56,7 +56,7 @@ const NavBarMission = () => {
         {/* </Link> */}
 
         <div className='flex w-1/3 flex-row justify-start sm:justify-end items-center text-lg gap-8 '>
-            <Link href={"/welcome"} className=' transition-all duration-500 hover:opacity-70'>
+            <Link href={"/waitlist"} className=' transition-all duration-500 hover:opacity-70'>
                 <h3 className='text-xl'>Begin</h3>
             </Link>
         </div>
@@ -67,7 +67,7 @@ const NavBarMission = () => {
 const JoinBetaCTA = () => {
   return (
     <div className={`flex flex-wrap gap-4 ${outfit.className} fixed bottom-10 inset-x-0 justify-center sm:py-4 text-white`}>
-      <Link href={"/welcome"} className=' transition-all duration-500 hover:opacity-70'>
+      <Link href={"/waitlist"} className=' transition-all duration-500 hover:opacity-70'>
         <div className='flex flex-row gap-2 justify-center items-center'>
           <h3 className="text-xl sm:text-2xl pb-1.5">Tell your Story</h3>
           {/* <h3>Join the Waitlist</h3> */}
