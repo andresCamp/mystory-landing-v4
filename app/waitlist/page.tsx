@@ -25,6 +25,7 @@ const Page = () => {
                             alt="logo" 
                             height={55}
                         />
+                        
                     {/* </Link> */}
                     {/* <Link href="https://app.mystory.bio/sign-in" className='flex justify-end sm:hidden w-1/3'>
                         <button className=' ring-2 ring-white text-white text-xl rounded-3xl px-5 py-1 transition-all duration-500 hover:bg-primary-100 hover:scale-105'>
@@ -33,7 +34,7 @@ const Page = () => {
                     </Link> */}
                 </div>
 
-                {/* Image */}
+                {/* Main Image */}
                 <div className="w-full h-full relative ">
                     <div className="md:h-full md:w-full flex items-end"> 
                             <Image
@@ -64,7 +65,7 @@ const Page = () => {
                 <div className="w-full h-full max-w-md mx-auto sm:gap-10 gap-3 sm:pt-0 text-left flex flex-col sm:justify-center items-center sm:items-start">
                     <div className="text-gray-800 w-full px-4 py-5 sm:p-6">
                         <div className="text-left">
-                            <h2 className="font-bold text-5xl sm:text-4xl lg:text-5xl mb-4 leading-tight">
+                            <h2 className="font-bold text-4xl sm:text-4xl lg:text-5xl mb-4 leading-tight">
                             Join the Waitlist
                             </h2>  
                         </div>
