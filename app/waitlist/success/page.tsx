@@ -5,6 +5,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import mobileLogo from '@/public/mystoryIcon.svg'
 import { outfit } from '@/lib/fonts'
+import { Share } from 'next/font/google'
+import ShareButton from './ShareButton'
 
 
 
@@ -38,7 +40,14 @@ const Page = () => {
                     />
                 </Link>
                 {/* Title & Subtitle */}
-                <div className="text-gray-800 max-w-lg px-4 py-5 md:p-6 space-y-6">
+                <div className="flex flex-col text-gray-800 max-w-lg px-4 py-5 md:p-6 space-y-6">
+                        
+                    <div className='text-center w-full flex justify-center'>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-20 text-green-600">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                    </div>
+
                     <div className="text-left ">
                         <h2 className="font-bold text-4xl lg:text-5xl mb-4 whitespace-nowrap">
                             <span className="block mb-2 lg:mb-2">Thank you for joining</span>
@@ -49,12 +58,12 @@ const Page = () => {
                         <p className="text-xl mb-5">
                             We&apos;ve received your sign-up details and are thrilled to have you on board. We will be reaching out to you via email in the near future!
                         </p>
-
-                        <p className="text-lg text-gray-600 mt-4">
-                            Best,<br/>
-                            MyStory Team
-                        </p>
                     </div>
+                    
+                    <div className='w-full text-center'>
+                        <ShareButton/>
+                    </div>
+
                 </div>
             </div>
 
