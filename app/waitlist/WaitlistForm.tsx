@@ -3,9 +3,17 @@ import React, { FormEvent, useState } from 'react';
 import { waitlistSignUp } from '@/lib/hubspot'
 import { useFormState } from 'react-dom';
 import BlackButton from '@/components/BlackButton';
+import { useRouter } from 'next/navigation';
 
 const WaitlistForm = () => {
-  const [message, formAction] = useFormState(waitlistSignUp, null)
+    const [message, formAction] = useFormState(waitlistSignUp, null)
+
+
+    const router = useRouter(); // Initialize the useRouter hook
+
+    if(message === "true") {
+    router.push('/waitlist/success');
+    }
 
 return (
     <div className="relative font-questrial text-lg w-full max-w-lg mx-auto sm:max-w-md">

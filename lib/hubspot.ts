@@ -47,7 +47,7 @@ export async function waitlistSignUp(prevState: any, formData: FormData) {
     });
 
     if (response.ok) {
-      return "Thank you for joining our waitlist!";
+      return "true";
     } else {
       console.error("Failed to submit form to HubSpot");
       return "There was a problem with your sign-up. Please try again.";
