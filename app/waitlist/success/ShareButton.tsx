@@ -6,7 +6,7 @@ import { Drawer, DrawerTrigger, DrawerTitle, DrawerDescription, DrawerHeader, Dr
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import BlackButton from "@/components/BlackButton";
-import { CopyButton, MailButton } from "./ShareButtonUtils";
+import { CopyButton, MailForm } from "./ShareButtonUtils";
 
 
 
@@ -17,7 +17,7 @@ export default function ShareButton() {
 
 const sharedContent = (
     <>
-        <div className="grid gap-4 py-4 text-xl">
+        <div className="grid gap-4 py-4">
             <div className="grid grid-cols-4 items-center gap-4">
                 <Label className="text-right" htmlFor="link">
                     Link
@@ -31,10 +31,7 @@ const sharedContent = (
                 <Label className="text-right" htmlFor="email">
                     Email
                 </Label>
-                <div className="col-span-3 flex items-center space-x-2">
-                    <Input id="email" placeholder="Enter email address" type="email" />
-                    <MailButton />
-                </div>
+                <MailForm />
             </div>
         </div>
     </>
@@ -43,15 +40,15 @@ const sharedContent = (
 
     return (
         <div>
-            <div className="hidden md:flex">
+            <div className="hidden md:flex items-center justify-center">
                 <Dialog>
                     <DialogTrigger asChild>
                         <BlackButton>Share Link</BlackButton>
                     </DialogTrigger>
                     <DialogContent className="sm:max-w-[425px]">
                         <DialogHeader>
-                            <DialogTitle>Share this link</DialogTitle>
-                            <DialogDescription>Copy the link below or send it via email.</DialogDescription>
+                            <DialogTitle className=" tracking-normal">Share MyStory with your Friends and Family!</DialogTitle>
+                            <DialogDescription>Copy the link below or send via email.</DialogDescription>
                         </DialogHeader>
                         {sharedContent}
                         <DialogFooter>
@@ -66,15 +63,15 @@ const sharedContent = (
                 </Dialog>
             </div>
 
-            <div className="flex md:hidden">
+            <div className="flex md:hidden items-center justify-center">
                 <Drawer>
                     <DrawerTrigger asChild>
                         <BlackButton>Share Link</BlackButton>
                     </DrawerTrigger>
                     <DrawerContent>
                         <DrawerHeader className="text-left">
-                            <DrawerTitle>Share this link</DrawerTitle>
-                            <DrawerDescription>Copy the link below or send it via email.</DrawerDescription>
+                            <DrawerTitle className=" tracking-normal">Share MyStory with your Friends and Family!</DrawerTitle>
+                            <DrawerDescription>Copy the link below or send via email.</DrawerDescription>
                         </DrawerHeader>
                         {sharedContent}
                         <DrawerFooter>

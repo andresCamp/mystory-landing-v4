@@ -48,21 +48,31 @@ const Page = () => {
                         </svg>
                     </div>
 
-                    <div className="text-left ">
-                        <h2 className="font-bold text-4xl lg:text-5xl mb-4 whitespace-nowrap">
+                    <div className="text-center md:text-left">
+                        <h2 className="font-bold text-5xl lg:text-5xl mb-4 whitespace-nowrap">
                             <span className="block mb-2 lg:mb-2">Thank you for joining</span>
                             <span className="block">the MyStory waitlist!</span>
                         </h2>
                     </div>
                     <div>
-                        <p className="text-xl mb-5">
+                        <p className="text-xl mb-16">
                             We&apos;ve received your sign-up details and are thrilled to have you on board. We will be reaching out to you via email in the near future!
                         </p>
                     </div>
-                    
-                    <div className='w-full text-center'>
+                   
+                   
+                    <div className='flex flex-col gap-3 items-center '>
+                        <h2 className='text-2xl font-bold'>
+                            Invite Others!
+                        </h2>
+                        <p className="mb-5">
+                            Click “Share Link” to invite friends and family to join MyStory.
+                        </p>
                         <ShareButton/>
                     </div>
+                    
+
+
 
                 </div>
             </div>
