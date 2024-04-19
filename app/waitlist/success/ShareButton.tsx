@@ -51,14 +51,7 @@ const sharedContent = (
                             <DialogDescription>Copy the link below or send via email.</DialogDescription>
                         </DialogHeader>
                         {sharedContent}
-                        <DialogFooter>
-                            {/* <Button variant="ghost">Send via email</Button> */}
-                            <DialogClose asChild>
-                                <Button className="ml-auto" type="submit">
-                                    Done
-                                </Button>
-                            </DialogClose>
-                        </DialogFooter>
+                        
                     </DialogContent>
                 </Dialog>
             </div>
@@ -74,14 +67,7 @@ const sharedContent = (
                             <DrawerDescription>Copy the link below or send via email.</DrawerDescription>
                         </DrawerHeader>
                         {sharedContent}
-                        <DrawerFooter>
-                            {/* <Button variant="ghost">Send via email</Button> */}
-                            <DrawerClose>
-                                <Button className="ml-auto" type="submit">
-                                    Done
-                                </Button>
-                            </DrawerClose>
-                        </DrawerFooter>
+                     
                     </DrawerContent>
                 </Drawer>
 
