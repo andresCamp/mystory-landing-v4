@@ -112,6 +112,30 @@ export const MailForm = () => {
             onChange={handleEmailChange}
             required
           />
+          <Input
+            hidden
+            className='hidden'
+            type="text"
+            id="waitlist_referrer_first_name"
+            name='waitlist_referrer_first_name'
+            value={localStorage.getItem('waitlist_referrer_first_name') || ''}
+            onChange={handleEmailChange}
+            required
+          />
+          <Input
+            hidden
+            className='hidden'
+            type="text"
+            id="waitlist_referrer_last_name"
+            name='waitlist_referrer_last_name'
+            value={localStorage.getItem('waitlist_referrer_last_name') || ''}
+            onChange={handleEmailChange}
+            required
+          />
+
+
+
+
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
