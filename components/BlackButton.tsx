@@ -2,7 +2,7 @@ import React from 'react';
 
 interface BlackButtonProps {
     children: React.ReactNode;
-    type: "submit" | "reset" | "button" | undefined;
+    type?: "submit" | "reset" | "button" | undefined;
 }
 
 const BlackButton: React.FC<BlackButtonProps> = ({ type, children }) => {
