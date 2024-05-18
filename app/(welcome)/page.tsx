@@ -52,7 +52,7 @@ const Page = () => {
             <div className="flex h-1/3 sm:h-full sm:w-1/2">
                 {/* Mobile nav */}
                 <div className='flex justify-between p-3 items-center absolute top-0 z-50 left-0 w-full sm:hidden'>
-                    <h2 className='text-2xl w-1/3'>MyStory</h2>
+                    <h2 className='text-2xl w-1/3 text-white'>MyStory</h2>
                     <Link href={"/"} className='flex justify-center transition-all duration-500 hover:opacity-70  sm:hidden w-1/3'>
                         <Image
                             src={mobileLogo}
