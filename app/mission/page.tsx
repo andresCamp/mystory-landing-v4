@@ -83,7 +83,7 @@ const MissionCard: React.FC<MissionCardProps> = ({title, description, image, del
 
     return (
 
-        <div className="relative flex items-center justify-center h-screen w-screen bg-black p-2">
+        <div className="relative flex items-center justify-center h-[calc(100dvh)] w-screen bg-black p-2">
             {image && (
                         <Image
                         src={image}

@@ -11,7 +11,7 @@ import { outfit } from '@/lib/fonts'
 
 const Page = () => {
     return (
-        <div className="flex flex-col-reverse sm:flex-row h-screen overflow-hidden">
+        <div className="flex flex-col-reverse sm:flex-row h-[calc(100dvh)] overflow-hidden">
             
             {/* Text Section */}
             <div className=" flex flex-1 flex-col items-center sm:items-start justify-center bg-secondary p-8 h-2/3 sm:h-auto sm:w-1/2">
