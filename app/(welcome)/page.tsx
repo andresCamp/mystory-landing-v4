@@ -17,7 +17,7 @@ const Page = () => {
             <div className=" flex flex-1 flex-col items-center sm:items-start justify-center bg-secondary p-8 h-2/3 sm:h-auto sm:w-1/2">
                 
                 {/* Logo */}
-                <Link href={"/"} className='transition-all duration-500 hover:opacity-70 hidden sm:block'>
+                <Link href={"/"} className='transition-all duration-500 hover:opacity-70 hidden sm:block mb-5'>
                     <Image
                         src={logo}
                         alt="logo" 
@@ -27,9 +27,9 @@ const Page = () => {
                 {/* /Logo */}
 
                 {/* Title & Subtitle */}
-                <div className="w-full h-full max-w-md mx-auto sm:gap-10 gap-3 sm:pt-0 text-left flex flex-col sm:justify-center items-center sm:items-start">
+                <div className="w-full max-w-md mx-auto sm:gap-10 gap-3 sm:pt-0 text-left flex flex-col sm:justify-center items-center sm:items-start">
                     <div className="text-gray-800 w-full">
-                        <h2 className="font-bold text-5xl sm:text-6xl lg:text-7xl mb-4 leading-tight">
+                        <h2 className="font-bold text-4xl sm:text-6xl lg:text-7xl mb-4 leading-tight">
                             <span>My Legacy</span><br/>
                             <span>My Treasure</span><br/>
                             <span>MyStory</span>
@@ -60,11 +60,26 @@ const Page = () => {
                             height={55}
                         />
                     </Link>
-                    <Link href="https://app.mystory.bio/sign-in" className='flex justify-end sm:hidden w-1/3'>
-                        <button className=' ring-2 ring-white text-white text-xl rounded-3xl px-5 py-1 transition-all duration-500 hover:bg-primary-100 hover:scale-105'>
-                            Sign In
-                        </button>
-                    </Link>
+
+                    <div className='flex flex-col items-end justify-end sm:hidden w-1/3'>
+                        <Link href="https://app.mystory.bio/sign-in">
+                            <button className=' ring-2 ring-white text-white text-xl rounded-3xl px-5 py-1 transition-all duration-500 hover:bg-primary-100 hover:scale-105'>
+                                Sign In
+                            </button>
+                        </Link>
+
+                        <Link href={"/mission"} className='text-white absolute top-full text-xl transition-all duration-500 hover:opacity-70'>
+                            Our Mission
+                        </Link>
+                                    
+                        {/* <Link href={"/mission"} className='text-white relative text-xl transition-all duration-500 hover:opacity-70'>
+                            Our Mission
+                        </Link> */}
+
+                    </div>
+
+
+
                 </div>
 
                 {/* Image */}
@@ -80,11 +95,23 @@ const Page = () => {
                     </div>
                 </div>
 
-                <Link href="https://app.mystory.bio/sign-in" className='hidden sm:block'>
+                <div className='hidden sm:flex sm:flex-row items-center absolute right-0'>
+                    <Link href={"/mission"} className='text-white text-2xl transition-all duration-500 hover:opacity-70'>
+                        Our Mission
+                    </Link>
+
+                    <Link href="https://app.mystory.bio/sign-in" className='hidden sm:block'>
+                        <button className='bg-white text-black text-xl rounded-3xl px-10 m-10 py-3  transition-all duration-500 hover:bg-primary-100 hover:scale-105'>
+                            Sign In
+                        </button>
+                    </Link>
+                </div>
+
+                {/* <Link href="https://app.mystory.bio/sign-in" className='hidden sm:block'>
                     <button className='bg-white text-black text-xl rounded-3xl px-10 m-10 py-3 absolute right-0 transition-all duration-500 hover:bg-primary-100 hover:scale-105'>
                         Sign In
                     </button>
-                </Link>
+                </Link> */}
             </div>
 
         </div>
