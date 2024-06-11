@@ -17,13 +17,14 @@ const Page = () => {
             <div className=" flex flex-1 flex-col items-start sm:items-start justify-center bg-secondary p-8 h-2/3 sm:h-auto sm:w-1/2">
                 
                 {/* Logo */}
-                <Link href={"/"} className='transition-all duration-500 hover:opacity-70 mb-5'>
+                {/* <Link href={"/"} className='transition-all duration-500 hover:opacity-70 mb-5'> */}
                     <Image
                         src={logo}
                         alt="logo" 
                         height={65}
+                        className='hidden sm:block mb-5'
                     />
-                </Link>
+                {/* </Link> */}
                 {/* /Logo */}
 
                 {/* Title & Subtitle */}
