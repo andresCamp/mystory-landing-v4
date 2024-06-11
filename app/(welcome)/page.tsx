@@ -3,8 +3,8 @@ import img from '@/public/mystoryimage1.png'
 import logo from '@/public/MyStoryLogo-HorizontalBlack.svg'
 import Image from 'next/image'
 import Link from 'next/link'
-// import mobileLogo from '@/public/mystoryIcon.svg'
-import mobileLogo from '@/public/MyStoryLogo-HorizontalWhite.svg'
+import mobileLogo from '@/public/mystoryIcon.svg'
+// import mobileLogo from '@/public/MyStoryLogo-HorizontalWhite.svg'
 import { outfit } from '@/lib/fonts'
 
 
@@ -15,21 +15,19 @@ const Page = () => {
         <div className="flex flex-col-reverse sm:flex-row h-[calc(100dvh)] overflow-hidden">
             
             {/* Text Section */}
-            <div className=" flex flex-1 flex-col items-start sm:items-start justify-center bg-secondary p-8 h-2/3 sm:h-auto sm:w-1/2">
+            <div className=" flex flex-col items-start sm:items-start justify-center ring-2 ring-black h-4/5 bg-secondary p-8 sm:h-auto sm:w-1/2">
                 
                 {/* Logo */}
-                {/* <Link href={"/"} className='transition-all duration-500 hover:opacity-70 mb-5'> */}
-                    <Image
-                        src={logo}
-                        alt="logo" 
-                        height={65}
-                        className='hidden sm:block mb-5'
-                    />
-                {/* </Link> */}
+                <Image
+                    src={logo}
+                    alt="logo" 
+                    height={65}
+                    className='block mb-5'
+                />
                 {/* /Logo */}
 
                 {/* Title & Subtitle */}
-                <div className="w-full max-w-md mx-auto sm:gap-10 gap-3 sm:pt-0 text-left flex flex-col sm:justify-center items-center sm:items-start">
+                <div className="w-full max-w-md sm:gap-10 gap-3 sm:pt-0 text-left flex flex-col sm:justify-center items-center sm:items-start">
                     <div className="text-gray-800 w-full">
                         <h2 className="font-bold text-5xl sm:text-6xl lg:text-7xl mb-4 leading-tight">
                             <span>My Legacy</span><br/>
@@ -49,27 +47,22 @@ const Page = () => {
             </div>
             {/* /Text Section */}
 
-
             {/* Image Section */}
-            <div className="flex h-1/3 sm:h-full sm:w-1/2">
+            <div className="flex h-1/5 sm:h-full sm:w-1/2">
+
                 {/* Mobile nav */}
-                <div className='flex justify-between p-3 items-center absolute top-3 z-50 left-0 w-full sm:hidden'>
-                    {/* <h2 className='text-2xl w-1/3 text-white'>MyStory</h2> */}
-                    {/* <Link href={"/"} className='flex justify-start transition-all duration-500 hover:opacity-70  sm:hidden'> */}
-                    <Link href={"/"} className='flex justify-start  sm:hidden'>
-                        <Image
-                            src={mobileLogo}
-                            alt="logo" 
-                            height={55}
-                        />
+                <div className='flex justify-between px-3 h-1/5 absolute bg-black/40 items-center  z-50 left-0 w-full sm:hidden'>
+                    <Link href={"/mission"} className='text-white text-xl transition-all duration-500 hover:opacity-70'>
+                        Our Mission
                     </Link>
-                    {/* <Link href={"/"} className='flex justify-center transition-all duration-500 hover:opacity-70  sm:hidden w-1/3'>
+
+                    
                         <Image
                             src={mobileLogo}
                             alt="logo" 
                             height={55}
                         />
-                    </Link> */}
+                 
 
                     <div className='flex flex-col items-end justify-center sm:hidden'>
                         <Link href="https://app.mystory.bio/sign-in">
@@ -78,33 +71,23 @@ const Page = () => {
                             </button>
                         </Link>
 
-                        <Link href={"/mission"} className='text-white absolute top-full text-xl transition-all duration-500 hover:opacity-70'>
-                            Our Mission
-                        </Link>
-                                    
-                        {/* <Link href={"/mission"} className='text-white relative text-xl transition-all duration-500 hover:opacity-70'>
-                            Our Mission
-                        </Link> */}
-
                     </div>
-
-
-
                 </div>
+                {/* Mobile Nav */}
 
                 {/* Image */}
-                <div className="w-full h-full relative ">
-                    <div className="md:h-full md:w-full flex items-end"> 
-                            <Image
-                                src={img}
-                                fill
-                                placeholder="blur"
-                                alt="MyStory image holding hands"
-                                className="w-full h-full object-cover object-bottom" 
-                            />
-                    </div>
+                <div className="w-full sm:h-full  relative ">
+                    <Image
+                        src={img}
+                        fill
+                        placeholder="blur"
+                        alt="MyStory image holding hands"
+                        className="object-cover object-bottom" 
+                    />
                 </div>
+                {/* Image */}
 
+                {/* Desktop Nav */}
                 <div className='hidden sm:flex sm:flex-row items-center absolute right-0'>
                     <Link href={"/mission"} className='text-white text-2xl transition-all duration-500 hover:opacity-70'>
                         Our Mission
@@ -115,19 +98,9 @@ const Page = () => {
                             Sign In
                         </button>
                     </Link>
-
-                    
-
-
                 </div>
-
-                {/* <Link href="https://app.mystory.bio/sign-in" className='hidden sm:block'>
-                    <button className='bg-white text-black text-xl rounded-3xl px-10 m-10 py-3 absolute right-0 transition-all duration-500 hover:bg-primary-100 hover:scale-105'>
-                        Sign In
-                    </button>
-                </Link> */}
+                {/* Desktop Nav */}
             </div>
-
         </div>
     )
 }
