@@ -14,10 +14,10 @@ const Page = () => {
         <div className="flex flex-col-reverse sm:flex-row h-[calc(100dvh)] overflow-hidden">
             
             {/* Text Section */}
-            <div className=" flex flex-1 flex-col items-center sm:items-start justify-center bg-secondary p-8 h-2/3 sm:h-auto sm:w-1/2">
+            <div className=" flex flex-1 flex-col items-start sm:items-start justify-center bg-secondary p-8 h-2/3 sm:h-auto sm:w-1/2">
                 
                 {/* Logo */}
-                <Link href={"/"} className='transition-all duration-500 hover:opacity-70 hidden sm:block mb-5'>
+                <Link href={"/"} className='transition-all duration-500 hover:opacity-70 mb-5'>
                     <Image
                         src={logo}
                         alt="logo" 
@@ -29,7 +29,7 @@ const Page = () => {
                 {/* Title & Subtitle */}
                 <div className="w-full max-w-md mx-auto sm:gap-10 gap-3 sm:pt-0 text-left flex flex-col sm:justify-center items-center sm:items-start">
                     <div className="text-gray-800 w-full">
-                        <h2 className="font-bold text-4xl sm:text-6xl lg:text-7xl mb-4 leading-tight">
+                        <h2 className="font-bold text-5xl sm:text-6xl lg:text-7xl mb-4 leading-tight">
                             <span>My Legacy</span><br/>
                             <span>My Treasure</span><br/>
                             <span>MyStory</span>
@@ -101,10 +101,14 @@ const Page = () => {
                     </Link>
 
                     <Link href="https://app.mystory.bio/sign-in" className='hidden sm:block'>
-                        <button className='bg-white text-black text-xl rounded-3xl px-10 m-10 py-3  transition-all duration-500 hover:bg-primary-100 hover:scale-105'>
+                        <button className='ring-2 ring-white text-white text-xl rounded-3xl px-10 m-10 py-3  transition-all duration-300 hover:bg-white hover:text-black '>
                             Sign In
                         </button>
                     </Link>
+
+                    
+
+
                 </div>
 
                 {/* <Link href="https://app.mystory.bio/sign-in" className='hidden sm:block'>
@@ -127,7 +131,8 @@ interface PrimaryButtonProps {
 const PrimaryButton: React.FC<PrimaryButtonProps> = ({children, url}) => {
     return (
           <Link href={url} >
-              <button className='flex justify-center items-center gap-2.5 px-12 py-4 bg-black text-white  rounded-full shadow-xl transition-all duration-500  hover:bg-primary-300 hover:scale-105'>
+              {/* <button className='flex justify-center items-center gap-2.5 px-12 py-4 bg-black text-white  rounded-full shadow-xl transition-all duration-500  hover:bg-primary-300 hover:scale-105'> */}
+              <button className="bg-mprimary-300 px-12 py-4 text-xl text-white transition-all duration-300 rounded-full hover:bg-mprimary-200 hover:text-black hover:scale-105">
                   {children}
               </button>
           </Link>
