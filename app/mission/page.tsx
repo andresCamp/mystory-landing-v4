@@ -8,7 +8,7 @@ import TornPhoto from '@/public/MissionImages/TornPhoto.png'
 
 const page = () => {
     return (
-        <div className="relative h-screen bg-black flex-col snap-y snap-mandatory scroll-smooth overflow-y-auto ">
+        <div className="relative h-[calc(100dvh)] bg-black flex-col snap-y snap-mandatory scroll-smooth overflow-y-auto ">
             <section className="snap-start shrink-0">
                 <MissionCard
                 title="The next paradigm in human connection | is storytelling"
